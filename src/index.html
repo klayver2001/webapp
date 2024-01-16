@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitor de Excel</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    main {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    label {
+      cursor: pointer;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    label:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <label for="file-input">Selecionar Arquivo Excel</label>
+    <input type="file" id="file-input" accept=".xlsx">
+    <script src="./xlsx/xlsx.full.min.js"></script>
+    <script src="./index.ts"></script>
+  </main>
+</body>
+</html>
